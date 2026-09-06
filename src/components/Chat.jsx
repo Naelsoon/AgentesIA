@@ -23,7 +23,7 @@ export default function Chat({ personagemSelecionado, voltarHome }) {
     setCarregando(true);
 
     try {
-      const response = await fetch('http://localhost:5000/falar-com-ia', {
+      const response = await fetch('[https://agentesia-0qxk.onrender.com](https://agentesia-0qxk.onrender.com)', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
